@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill the Form</title>
+    <link rel="stylesheet" href="cssDEMO1.css" type="text/css">
+    <style>
+        #one{
+            background-color:aquamarine;
+            text-align: center;
+        }
+        #two{
+            background-color:#E3D7FF;
+        }
+        #three{
+            background-color: aquamarine;
+        }
+        #four{
+            background-color: bisque;
+        }
+    </style>
+    
+</head>
+<body>
+    <form><hr>
+        <section id="one"><h2>Form</h2><hr></section>
+        <div id="two">
+            <label>Name :</label><input type="text" placeholder="Enter your name" required><br>
+            <label>Age :</label><input type="number" placeholder="Enter your age" required><br>
+            <label>Department: </label><select name="" id="">
+                <option value="">CSE</option>
+                <option value="">EEE</option>
+                <option value="">ECE</option>
+                <option value="">Mech</option>
+            </select>
+            <br>
+            <label required>Gender :</label>
+                <input name="Gender" value="Male" type="radio">Male 
+                <input name="Gender" value="Female" type="radio">Female 
+                <input name="Gender" value="Others" type="radio">Others <br>
+            <label>Address :</label><input type="text" placeholder="Enter your address"><br>
+            <label id="l1">Course :</label>
+                <ol><li>Java <input type="checkbox"></li>
+                    <li>Python <input type="checkbox"></li>
+                    <li>Testing <input type="checkbox"></li>
+                </ol>
+            <label >Join date :</label><input type="date"><br>
+            <label >Completion Date :</label><input type="date"><br>
+        
+            <div style="text-align: center;">
+                <input type="submit">
+            </div><hr>
+            </div>
+            <div id="three"><h2 style="text-align: center;">Login Page</h2><hr></div>
+            <div id="four">
+             
+            <label>User Id :</label><input type="text" placeholder="Username" required><br>
+            <label>Password :</label><input type="password" placeholder="Password" required><br>
+            <label>Email id :</label><input type="email" placeholder="Email Address"><br>
+            <label>Contact :</label><input type="number" placeholder="Contact number"><br>
+            <label>Resume :</label><input type="file"><br>
+            <label>Photo :</label><input type="image"><br>
+            <label>Gitub Link :</label><input type="url" placeholder="Enter only URL"><br>
+            <br>
+            <label>Search :</label><input type="search" placeholder="Search here"><br>
+            <label>Color :</label><input type="color"><br>
+            <label>Reset :</label><input type="reset"><br>
+            <label>Date & Time :</label><input type="datetime-local"><br>
+            <label>Range :</label><input type="range"><br>
+            <label>Week :</label><input type="week"><br>
+
+        </div>
+    </form>    
+    <!-- <video src="mocking Bird [875C1D7].mp4" width="200" controls autoplay></video> -->
+</body>
+</html>

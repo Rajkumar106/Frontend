@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color:#2F2D2E;
+    margin: -25px;
+    padding: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+body{
+    margin: 20px;
+    padding: 10px;
+}
+
+.body{
+    margin: 10px;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+h1{
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:italic;
+    font-size: 40px; 
+}
+
+a{
+    color: rgb(219, 214, 214);
+    text-decoration: none;
+}
+.navbar{
+    padding-top: 30px;
+}
+a:hover{
+    color: whitesmoke;
+    font-size: 16.6px;
+}
+
+.image1,.image2,.image3{
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 80px;
+    padding: 5px;
+    display: inline-block;
+    width: 402px;
+    border: solid gray;
+    border-radius: 10px;
+}
+
+.image1:hover,.image2:hover,.image3:hover{
+    border-color: rgb(47,47,47,0.5);
+    cursor: pointer;
+    width: 405px;
+    color: aliceblue;
+}
+
+table{
+    border-radius: 15px;
+    padding: 10px;
+    font-size:16px ;
+}
+
+td .box{
+    border: solid white;
+    border-width:2px ;
+    border-radius: 9px;
+    padding: 5px;
+
+}
+
+td .box:hover{
+    border-width: 2.4px;
+    border-color: rgb(70, 152, 224);
+}
+
+#date{
+    cursor: pointer;
+}
+
+td{
+    padding: 4px;
+}
+
+.footercontent{
+    padding-top: 20px;
+    background-color: #2F2D2E;
+    color: aliceblue;
+    margin: -25px;
+    padding-bottom: 10px;
+    
+}
+
+.tablecontent{
+    margin-left: 40%;
+    color: aliceblue;
+    background-color: rgb(47,47,47,0.5);
+}
+
+.regform h3{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    margin: 10px;
+    padding:2px ;
+    width: 4;
+}
+
+div .formcenter{
+    background-color: black;
+}
+
+.footercontent1 {
+    text-align: center;
+    padding: 5px;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(47,47,47,0.5);
+    border-radius: 40px;
+    color: aliceblue;
+    display: inline-block;
+    padding:50px;
+    text-align: center;
+    font-size: 16px;
+    width: 93%;
+}
+
+.gymdetails ul a:hover{
+    text-decoration: underline;
+}
+
+.image1 .image2 .image3 .imagecontent{
+    display: inline;
+}
+
+p{
+    font-size: 16px;
+}
+@media screen and (min-width:480px) {
+    body{
+        background-color:rgb(144, 137, 137);
+    }
+    
+}
+

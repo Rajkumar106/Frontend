@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Guess the Number</h1>
+    <input id="num" type="number" />
+    <button onclick="isRand()">Check</button>
+    <p id="score">Your Score : 10</p>
+    <script>
+        var total = 10; // Initial score
+        
+
+        function isRand() {
+            var a = document.getElementById("num");
+            var rand = Math.floor(Math.random() * 10) + 1;
+            console.log(rand);
+            var enteredNum = Number(a.value);
+            var sc = document.getElementById("score");
+
+            if (enteredNum === rand) {
+                alert("Congratulations, You Won! "+ "...Your Score : "+total+ "/10");
+            } else {
+                total--;
+                sc.textContent = "Your Score : " + total;
+            }
+        }
+    </script>
+  </body>
+</html>

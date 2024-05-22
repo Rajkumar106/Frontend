@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC Task 2</title>
+</head>
+<body>
+    <button id="button" onclick="addFunc()">add Hello</button>
+    <div id="result"></div>
+
+    <script>
+        function addFunc()
+        {
+
+            var divcontent = document.getElementById("result")
+            var res=document.createElement("h1")
+            res.textContent="Hello"
+            divcontent.append(res)
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 550;
+      }
+      .all-container{
+        background-color: #53a1f5;
+      }
+      table {
+        width: 50%;
+        margin: 20px 0;
+        margin-left: 24%;
+        border: 4px solid #3392f7 ;
+        border-collapse: collapse;
+        table-layout: fixed;
+        overflow: hidden;
+
+      }
+
+      td,
+      tr,
+      th {
+        border: 3px solid #53a1f5;
+        padding: 12px;
+        text-align: center;
+        margin: 0px;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      table{
+        position: sticky;
+      }
+      
+      .input-box {
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;
+      }
+      ::placeholder{
+        color: #ddd;
+      }
+      .box {
+        padding: 5px;
+        border-radius: 5px;
+        width: 35%;
+        border:2px solid #ccc;
+        box-shadow:0 4px 7px rgba(0, 0, 0, 0.064);
+      }
+      button:focus{
+        border-color: #007bff;
+      }
+      button {
+        padding: 7px 15px;
+        background-color: #28a745;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        box-shadow:0 4px 7px rgba(0, 0, 0, 0.1);
+        color: white;
+      }
+      button:hover{
+        background-color: #168a31;
+        font-size: 15.15px;
+      }
+      table tbody tr td button{
+        background-color: red;
+      }
+      table tbody tr td button:hover{
+        background-color: rgb(207, 13, 13);
+
+      }
+      h1{
+        font-size: 68px;
+        font-weight: bold;
+        
+      }
+      th{
+        font-weight: bolder;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="all=container"></div>
+    <div class="input-box">
+        <h1>To Do List</h1><br><hr><br><br>
+      <input
+        class="box"
+        id="input-val"
+        type="text"
+        placeholder="Enter your task"
+      /><br /><br />
+      <button onclick="addToDo()">Add To Do</button> <br /><br /><br />
+    </div>
+
+    <div class="table-container">
+      <table class="table-container">
+        <thead>
+          <tr>
+            
+            <th>Task</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+    
+      function addToDo() {
+        var inp = document.getElementById("input-val");
+        var content = inp.value;
+        console.log(inp.value);
+
+        var tbody = document.querySelector("table tbody");
+        var newRow=document.createElement("tr")
+        console.log(newRow)
+        
+        var taskcell=document.createElement("td")
+        taskcell.textContent=content
+
+        var actionCell = document.createElement("td");
+
+        var delbutton=document.createElement("button")
+        
+        delbutton.textContent="Completed"
+
+        delbutton.onclick=function rem(){
+            newRow.remove();  
+        }
+
+        actionCell.appendChild(delbutton)
+        newRow.appendChild(taskcell)
+        newRow.appendChild(actionCell)
+        tbody.appendChild(newRow)
+
+      }
+    </script>
+  </body>
+</html>

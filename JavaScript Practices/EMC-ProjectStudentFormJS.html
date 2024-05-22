@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        padding:0px;
+        margin: 0px;
+        background-color: #f0f0f0;
+    }
+    .input-container{
+        margin-top: 80px;
+        text-align: center;
+    } 
+    .form-container{
+        margin-top: 40px;
+        display: inline-block;
+    }
+    .table-container{
+        border: none;
+        display: inline-block;
+        text-align: center;
+    }
+    ::placeholder{
+        color: #c5b8b8;
+    }
+    .placeholder{
+        color: #cecece;
+    }
+    .dropdown-box{
+        width: 100%;
+    }
+    table,tr,th,td{
+        border: 2px solid;
+        border-collapse: collapse;
+        padding: 10px;
+        margin: 10px;
+        width: 65%;
+        
+    }
+    td{
+        width: 70%;
+    }
+    .radio{
+        display: flex;
+        border: none;
+        justify-content: space-between;
+    }
+    input,.dropdown-box{
+        padding: 6px;
+        padding-left: 15px;
+        border-radius: 25px;
+        border: 1.5px solid #c1b4b4f2;
+        outline: none;
+
+    }
+    input:hover,.dropdown-box:hover{
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        border-color: #ccc;
+    }
+    input:focus,.dropdown-box:focus{
+        border-color: #007bff ;
+        outline: none;
+        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+
+        
+    }
+    .submit{
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+    }
+    .submit:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+        
+    }
+    .data-container{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+    }
+   
+    
+</style>
+
+<body>
+    <div class="all-container">
+        <div class="input-container">
+            <h1>STUDENT FORM</h1>
+            <form class="form-container">
+                <table class="table-container">
+                    <tr>
+                        <th>Name</th>
+                        <td><input type="text" placeholder="Enter your name" id="name-value"></td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td><input type="number" placeholder="Enter your age" id="age-value"></td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td class="radio"><input type="radio" name="Gender" id="" class="radiobt">Male
+                        <input type="radio" name="Gender" id="" class="radiobt">Female</td>
+                    </tr>
+                    <tr>
+                        <th>Course</th>
+                        <td><select name="course" id="" class="dropdown-box">
+                            <option value="" class="placeholder">"select"</option>
+                            <option value="course">Java</option>
+                            <option value="course">Python</option>
+                            <option value="course">HTML/CSS</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th>E-mail</th>
+                        <td><input type="email" id="" placeholder="example@gmail.com "></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" class="submit" id="submit-but" onclick="submitData()"></td>
+                    </tr>
+                </table>
+            </form>
+
+
+        </div>
+        <br><br><br>
+        <div class="data-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>AGE</th>
+                        <th>GENDER</th>
+                        <th>COURSE</th>
+                        <th>E-MAIL</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+    <script>
+
+        function submitData(){
+            var ename=document.getElementById("name-value")
+            var name=ename.value
+            console.log(name);
+        }
+
+    </script>
+    
+</body>
+</html>

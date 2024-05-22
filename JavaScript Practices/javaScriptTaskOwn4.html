@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMC Task 4</title>
+  </head>
+
+  <body>
+    <h1 id="result">Name</h1>
+    <br />
+    <button onclick="print(event)">Raj</button>
+    <button onclick="print(event)">Nawin</button>
+    <button onclick="print(event)">Bharani</button>
+
+    <script>
+      function print(event) 
+      {
+        var a = document.getElementById("result");
+        a.textContent = event.target.textContent;
+        console.log(event.target.textContent);
+      }
+    </script>
+  </body>
+</html>

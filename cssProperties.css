@@ -1,0 +1,25 @@
+*{
+    background-color: skyblue;
+}
+p{
+    color:blue;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin: 80px;
+    border: 3px solid blue;
+    border: dotted;
+    padding: 60px;
+    text-transform:capitalize;
+    
+}
+pre{
+    text-indent: 10%;
+    line-height: 5;
+}
+pre::first-letter
+p::after{
+    content: " ...Explore here with Joy";
+}

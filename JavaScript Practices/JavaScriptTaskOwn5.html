@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="one(event)">one</h1>
+    <h1 onclick="one(event)">two</h1>
+    <h1 onclick="one(event)">three</h1>
+    <h1 onclick="one(event)">four</h1>
+    <h1 onclick="one(event)">five</h1>
+    <h1 onclick="one(event)" >six</h1>
+
+    <script>
+        function one(event)
+        {
+            event.target.remove()
+            console.log( event.target.textContent + " Deleted..")
+           
+        }
+    </script>
+</body>
+</html>

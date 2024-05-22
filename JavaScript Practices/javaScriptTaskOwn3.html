@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="color" onclick="change()">Change Color</button> <br><br><br><br><br>
+
+    <h1 id="resultt"></h1>
+
+    <button id="one" onclick="changeName1()">Raj</button>
+
+    <button id="two" onclick="changeName2()">Nawin</button>
+
+    <button id="three" onclick="changeName3()">Bharani</button>
+
+    <script>
+        var a=document.getElementById("color")
+
+        function change(){
+            a.style.backgroundColor="red"
+            console.log("Color changed successfully...")
+        }
+
+        function changeName1()
+        {
+            var but=document.getElementById("one")
+            var h1=document.getElementById("resultt")
+            h1.textContent=but.textContent
+        }
+
+        function changeName2()
+        {
+            var but=document.getElementById("two")
+            var h1=document.getElementById("resultt")
+            h1.textContent=but.textContent
+        }
+
+        function changeName3()
+        {
+            var but=document.getElementById("three")
+            var h1=document.getElementById("resultt")
+            h1.textContent=but.textContent
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC Task 1</title>
+    <style>
+        .content{
+            font-family:sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <input id="inputBox" type="text" onkeyup="myFunc()"><br>
+    <h1 class="content" id="result"></h1>
+
+    <script>
+        var a=document.getElementById("inputBox");
+        function myFunc()
+        {
+            var b=a.value
+            console.log(b)
+            var c=document.getElementById("result")
+            c.textContent=b;
+        }
+        
+    </script>
+    
+</body>
+</html>

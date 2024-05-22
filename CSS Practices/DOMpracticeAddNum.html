@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="one" placeholder="num1"><br><br>
+    <input type="number" id="two" placeholder="num2"><br><br>
+    <button onclick="add()">add</button><br>
+    <p id="result">
+        result is:
+    </p>
+
+    <script>
+        var a=document.getElementById("one")
+        var b=document.getElementById("two")
+        var c=document.getElementById("result")
+        console.log(c.textContent)
+    
+        function add(){
+            d= +a.value + +b.value;
+            c.textContent="Result is :" + d;
+        }
+    </script>
+
+    
+</body>
+
+
+</html>

@@ -1,0 +1,38 @@
+.static{
+    position: static;
+    text-align: center;
+    border:solid saddlebrown ;
+}
+
+.relative{
+    position: relative;
+    border: solid red;
+    
+    top: 190px;
+}
+
+.sticky h1{
+    position: sticky;
+    border: solid green;
+    background-color: aquamarine;
+    padding: 10px;
+    top: 0.5px;
+}
+.sticky{
+    font-size: 25px;
+    margin: 20px;
+}
+
+.fixed{
+    position: fixed;
+    margin-left: 90%;
+    padding: 20px;
+    background-color: green;
+    color: white ;
+    z-index: 1;
+}
+
+div p{
+    padding: 50px;
+    font-size: 20px;
+}

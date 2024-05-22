@@ -1,0 +1,25 @@
+div{
+    align-content: center;
+}
+table{
+    
+    width: 300px;
+    margin: auto;
+    border-collapse: collapse;
+
+}
+th{
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding: 6px;
+    border: 1px solid;
+    background-color:cornflowerblue;
+}
+td{
+    padding: 6px;
+    border: 1px solid;
+}
+tr:nth-child(even){
+    background-color:beige ;
+}
