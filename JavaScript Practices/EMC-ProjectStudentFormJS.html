@@ -1,170 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-
-<style>
-    *{
-        padding:0px;
-        margin: 0px;
-        background-color: #f0f0f0;
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      background-color: #f0f0f0;
     }
-    .input-container{
-        margin-top: 80px;
-        text-align: center;
-    } 
-    .form-container{
-        margin-top: 40px;
-        display: inline-block;
+    .input-container {
+      margin-top: 80px;
+      text-align: center;
     }
-    .table-container{
-        border: none;
-        display: inline-block;
-        text-align: center;
+    .form-container {
+      margin-top: 40px;
+      display: inline-block;
     }
-    ::placeholder{
-        color: #c5b8b8;
+    .table-container {
+      border: none;
+      display: inline-block;
+      text-align: center;
     }
-    .placeholder{
-        color: #cecece;
+    ::placeholder {
+      color: #c5b8b8;
     }
-    .dropdown-box{
-        width: 100%;
+    .placeholder {
+      color: #cecece;
     }
-    table,tr,th,td{
-        border: 2px solid;
-        border-collapse: collapse;
-        padding: 10px;
-        margin: 10px;
-        width: 65%;
-        
+    .dropdown-box {
+      width: 100%;
     }
-    td{
-        width: 70%;
+    table,
+    tr,
+    th,
+    td {
+      border: 2px solid;
+      border-collapse: collapse;
+      padding: 10px;
+      margin: 12px;
+      width: 65%;
     }
-    .radio{
-        display: flex;
-        border: none;
-        justify-content: space-between;
+    td {
+      width: 70%;
     }
-    input,.dropdown-box{
-        padding: 6px;
-        padding-left: 15px;
-        border-radius: 25px;
-        border: 1.5px solid #c1b4b4f2;
-        outline: none;
-
+    .radio {
+      display: flex;
+      border: none;
+      justify-content: space-between;
     }
-    input:hover,.dropdown-box:hover{
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-        border-color: #ccc;
+    input,
+    .dropdown-box {
+      padding: 6px;
+      padding-left: 15px;
+      border-radius: 25px;
+      border: 1.5px solid #c1b4b4f2;
+      outline: none;
     }
-    input:focus,.dropdown-box:focus{
-        border-color: #007bff ;
-        outline: none;
-        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
-
-        
+    input:hover,
+    .dropdown-box:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      border-color: #ccc;
     }
-    .submit{
-        background-color: #007bff;
-        color: white;
-        padding: 10px;
-        border: none;
-        width: 100%;
+    input:focus,
+    .dropdown-box:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
     }
-    .submit:hover{
-        cursor: pointer;
-        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
-        
+    .submit {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
     }
-    .data-container{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        
+    .submit:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
     }
-   
-    
-</style>
-
-<body>
+    .data-container {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .del-but {
+      background-color: red;
+      color: white;
+      padding: 7px;
+      border: none;
+      margin: 10px;
+      border-radius: 6px;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+      width: 77%;
+    }
+  </style>
+  <body>
     <div class="all-container">
-        <div class="input-container">
-            <h1>STUDENT FORM</h1>
-            <form class="form-container">
-                <table class="table-container">
-                    <tr>
-                        <th>Name</th>
-                        <td><input type="text" placeholder="Enter your name" id="name-value"></td>
-                    </tr>
-                    <tr>
-                        <th>Age</th>
-                        <td><input type="number" placeholder="Enter your age" id="age-value"></td>
-                    </tr>
-                    <tr>
-                        <th>Gender</th>
-                        <td class="radio"><input type="radio" name="Gender" id="" class="radiobt">Male
-                        <input type="radio" name="Gender" id="" class="radiobt">Female</td>
-                    </tr>
-                    <tr>
-                        <th>Course</th>
-                        <td><select name="course" id="" class="dropdown-box">
-                            <option value="" class="placeholder">"select"</option>
-                            <option value="course">Java</option>
-                            <option value="course">Python</option>
-                            <option value="course">HTML/CSS</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <th>E-mail</th>
-                        <td><input type="email" id="" placeholder="example@gmail.com "></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" class="submit" id="submit-but" onclick="submitData()"></td>
-                    </tr>
-                </table>
-            </form>
-
-
-        </div>
-        <br><br><br>
-        <div class="data-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>NAME</th>
-                        <th>AGE</th>
-                        <th>GENDER</th>
-                        <th>COURSE</th>
-                        <th>E-MAIL</th>
-                        <th>ACTION</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-
+      <div class="input-container">
+        <h1>STUDENT FORM</h1>
+        <form id="myform" class="form-container">
+          <table class="table-container">
+            <tr>
+              <th>Name</th>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="name-value"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td>
+                <input
+                  type="number"
+                  placeholder="Enter your age"
+                  id="age-value"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Gender</th>
+              <td class="radio">
+                <input
+                  type="radio"
+                  name="Gender"
+                  value="Male"
+                  id="gender-value"
+                  class="radiobt"
+                  required
+                />Male
+                <input
+                  type="radio"
+                  name="Gender"
+                  value="Female"
+                  id="gender-value"
+                  class="radiobt"
+                  required
+                />Female
+              </td>
+            </tr>
+            <tr>
+              <th>Course</th>
+              <td>
+                <select
+                  name="course"
+                  id="course-name"
+                  class="dropdown-box"
+                  required
+                >
+                  <option class="placeholder">--select--</option>
+                  <option value="Java">Java</option>
+                  <option value="Python">Python</option>
+                  <option value="HTML/CSS">HTML/CSS</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>E-mail</th>
+              <td>
+                <input
+                  type="email"
+                  id="email-value"
+                  placeholder="example@gmail.com "
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="submit"
+                  class="submit"
+                  id="submit-but"
+                  onclick="submitData(event)"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <br /><br /><br />
+      <div class="data-container">
+        <table id="db-table">
+          <thead>
+            <tr>
+              <th>NAME</th>
+              <th>AGE</th>
+              <th>GENDER</th>
+              <th>COURSE</th>
+              <th>E-MAIL</th>
+              <th>ACTION</th>
+            </tr>
+            <tr></tr>
+          </thead>
+          <tbody id="db-body">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-
     <script>
+      function submitData(event) {
+        // Prevent form submission
+        event.preventDefault();
 
-        function submitData(){
-            var ename=document.getElementById("name-value")
-            var name=ename.value
-            console.log(name);
-        }
+        // Get form values
+        var name = document.getElementById("name-value").value;
+        var age = document.getElementById("age-value").value;
+        var gender = document.querySelector(
+          'input[name="Gender"]:checked'
+        ).value;
+        var course = document.getElementById("course-name").value;
+        var email = document.getElementById("email-value").value;
 
+        // Get the tbody element
+        var tbody = document.querySelector("#db-body");
+
+        // Create a new row
+        var newRow = document.createElement("tr");
+
+        // Create and append cells
+        var nameCell = document.createElement("td");
+        nameCell.textContent = name;
+        newRow.appendChild(nameCell);
+
+        var ageCell = document.createElement("td");
+        ageCell.textContent = age;
+        newRow.appendChild(ageCell);
+
+        var genderCell = document.createElement("td");
+        genderCell.textContent = gender;
+        newRow.appendChild(genderCell);
+
+        var courseCell = document.createElement("td");
+        courseCell.textContent = course;
+        newRow.appendChild(courseCell);
+
+        var emailCell = document.createElement("td");
+        emailCell.textContent = email;
+        newRow.appendChild(emailCell);
+
+        // Create and append the delete button
+        var actionCell = document.createElement("td");
+        var deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.setAttribute("class", "del-but");
+        deleteButton.onclick = function () {
+          newRow.remove();
+        };
+        actionCell.appendChild(deleteButton);
+        newRow.appendChild(actionCell);
+
+        // Append the new row to the tbody
+        tbody.appendChild(newRow);
+
+        // Clear form fields
+        document.getElementById("myform").reset();
+      }
     </script>
-    
-</body>
+  </body>
 </html>
