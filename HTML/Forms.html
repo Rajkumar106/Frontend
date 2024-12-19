@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+    <style>
+        input{
+            border: solid rgb(237, 213, 151);
+            border-radius: 10px;
+            padding: 7px;
+        }
+        input:hover{
+            border: solid rgb(14, 255, 14);
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0 0 7px green;
+        }
+        div{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+        }
+        td{
+            padding: 8px;
+        }
+        button:hover{
+            background-color: green;
+            color: azure;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Welcome to the forms, please fill the form and submit your Response</h2>
+    <hr>
+    <div>
+        
+        <form>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td>Age :</td>
+                    <td><input type="number" placeholder="Enter your age"></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" placeholder="example@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" placeholder="Enter your password"></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td><input type="radio" name="Gender">Male <input type="radio" name="Gender">Female</td>
+                </tr>
+                <tr>
+                    <td>Location :</td>
+                    <td><input type="text" placeholder="Enter your location"></td>
+                </tr>
+                <tr>
+                    <td>Stream :</td>
+                    <td>
+                        <select>
+                                <option value="" disabled selected>--Select one--</option>
+                                <option value="">CSE</option>
+                                <option value="">IT</option>
+                                <option value="">ECE</option>
+                                <option value="">EEE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit">✔️Submit</button></td>
+                    <td><button type="reset">🔄Reset</button></td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, nemo?</p>
+    
+</body>
+</html>

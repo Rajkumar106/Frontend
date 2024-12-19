@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,ol,li{
+    display: inline;
+}
+
+ol{
+    margin-left: 60%;
+    font-size: large;
+    color: rgb(218, 178, 178);
+}
+h1{
+    margin-left: 20px;
+}
+li:hover{
+    color: white;
+    font-size: 102%;
+    cursor: pointer;
+
+}
+
+.navigation{
+    background-color: rgb(211, 7, 7);
+    color: white;
+    padding: 20px;
+}
+
+.search{
+    margin-top: 35px;
+    text-align: center;
+}
+input{
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid gray;
+    outline: none;
+    font-size: 20px;
+}
+input::placeholder{
+    color:rgb(198, 196, 196);
+}
+.products{
+    margin-top: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box{
+    border: solid gray;
+    display: inline-block;
+    width: 250px;
+}
+
+.box:hover{
+    border: solid rgb(211, 7, 7);
+    background-color: rgb(211, 7, 7);
+    color: white;
+}
+p{
+    padding: 10px;
+}
+.productHeading{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    color: rgb(211, 7, 7);
+}
+
+.aboutus{
+    margin-top: 60px;
+    display: block;
+    margin-left: 38px;
+    margin-right: 38px;
+}
+
+.aboutus h2{
+    text-align: center;
+    color: rgb(211, 7, 7);
+}
+
+.footer{
+    margin-top: 30px;
+    background-color: rgb(211, 7, 7);
+    color: aliceblue;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+.footer h4{
+
+    display: block;
+    text-align: center;
+    color: white;
+}

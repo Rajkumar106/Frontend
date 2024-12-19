@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(139, 200, 220);
+   
+}
+
+.container{
+    border: solid gray;
+    height: 1800px;
+    padding: 1px;
+    width: 100%;
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    left: 100px;
+    
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 150px;
+    top: 500px;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 500px;
+    background-color: green;
+}
+
+nav{
+    margin-top: 1150px;
+    z-index: 1;
+    position: sticky;
+    top:400px;
+    background-color: blueviolet;
+}

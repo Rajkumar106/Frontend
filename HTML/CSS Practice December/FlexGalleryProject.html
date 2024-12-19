@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:'Fredoka One', sans-serif;
+            background-color: greenyellow;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container div{
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            flex-basis: 20%;
+
+        }
+
+        .container div:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Album</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal1" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal2" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal3" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal4" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal5" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal6" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal7" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250/250?animal8" alt="no image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, adipisci.</p>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
